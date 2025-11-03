@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ochtrup – Interaktive Karte</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Ochtrup – Interaktive Karte mit Vorfällen</h1>
+    <div class="controls">
+      <label>Sachverhalt:</label>
+      <select id="filterType">
+        <option value="ALL">Alle</option>
+        <option value="Diebstahl">Diebstahl</option>
+        <option value="Verkehrsunfall">Verkehrsunfall</option>
+        <option value="Körperverletzung">Körperverletzung</option>
+        <option value="Ruhestörung">Ruhestörung</option>
+      </select>
+      <button id="resetBtn">Zurücksetzen</button>
+    </div>
+  </header>
+  <div id="map"></div>
+  <footer><p>Demo-Daten, nur zu Ausbildungs-/Testzwecken. © Leaflet &amp; OSM-Mitwirkende</p></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
